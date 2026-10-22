@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Delivery - DHL Courier Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>DHL Courier Service</h1>
+    <p>Courier Service Management System</p>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html">Home</a>
+        <a href="insert.html">Insert</a>
+        <a href="view.html">View</a>
+        <a href="search.html">Search</a>
+        <a href="payment-slip.html">Payment Slip</a>
+    </aside>
+
+    <main>
+        <h2>Insert Delivery</h2>
+        <form class="customer-form">
+            <div class="form-group">
+                <label for="delivery_id">Delivery ID:</label>
+                <input type="text" id="delivery_id" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery_shipment_id">Shipment ID:</label>
+                <input type="text" id="delivery_shipment_id" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery_employee_id">Employee ID:</label>
+                <input type="text" id="delivery_employee_id" required>
+            </div>
+            <div class="form-group">
+                <label for="delivery_date">Delivery Date:</label>
+                <input type="date" id="delivery_date">
+            </div>
+            <div class="form-group">
+                <label for="delivery_status">Delivery Status:</label>
+                <select id="delivery_status" required>
+                    <option value="">Select Status</option>
+                    <option>Pending</option>
+                    <option>Out for Delivery</option>
+                    <option>Delivered</option>
+                    <option>Failed</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="received_by">Received By:</label>
+                <input type="text" id="received_by">
+            </div>
+            <button type="button" class="save-button">Save</button>
+        </form>
+    </main>
+</div>
+
+<footer>
+    <p>Developed by: Faiza Anjum Ritu</p>
+    <p>ID: 25203175 | Section: B</p>
+    <p>Department of CSE | IUBAT</p>
+</footer>
+</body>
+</html>

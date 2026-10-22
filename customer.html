@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Customer - DHL Courier Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Same header as Home Page -->
+    <header>
+        <h1>DHL Courier Service</h1>
+        <p>Courier Service Management System</p>
+    </header>
+
+    <!-- Main layout -->
+    <div class="container">
+
+        <!-- Same left menu -->
+        <aside class="sidebar">
+            <h2>Menu</h2>
+
+            <a href="index.html">Home</a>
+            <a href="insert.html">Insert</a>
+            <a href="view.html">View</a>
+            <a href="search.html">Search</a>
+            <a href="payment-slip.html">Payment slip</a>
+        </aside>
+
+        <!-- Customer Insert Form -->
+        <main>
+            <h2>Insert Customer</h2>
+
+            <form class="customer-form">
+
+                <div class="form-group">
+                    <label for="customer_id">Customer ID:</label>
+                    <input type="text" id="customer_id"
+                           name="customer_id" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer_name">Customer Name:</label>
+                    <input type="text" id="customer_name"
+                           name="customer_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone"
+                           name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"
+                           name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"
+                              rows="3" required></textarea>
+                </div>
+
+                <button type="button" class="save-button">
+                    Save
+                </button>
+
+            </form>
+        </main>
+
+    </div>
+
+    <!-- Same footer as Home Page -->
+    <footer>
+        <p>Developed by: Faiza Anjum Ritu</p>
+        <p>ID: 25203175 | Section: B</p>
+        <p>Department of CSE | IUBAT</p>
+    </footer>
+
+</body>
+</html>

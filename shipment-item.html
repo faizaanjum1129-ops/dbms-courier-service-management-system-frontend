@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Shipment Item - DHL Courier Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>DHL Courier Service</h1>
+    <p>Courier Service Management System</p>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html">Home</a>
+        <a href="insert.html">Insert</a>
+        <a href="view.html">View</a>
+        <a href="search.html">Search</a>
+        <a href="payment-slip.html">Payment Slip</a>
+    </aside>
+
+    <main>
+        <h2>Insert Shipment Item</h2>
+        <form class="customer-form">
+            <div class="form-group">
+                <label for="item_id">Item ID:</label>
+                <input type="text" id="item_id" required>
+            </div>
+            <div class="form-group">
+                <label for="item_shipment_id">Shipment ID:</label>
+                <input type="text" id="item_shipment_id" required>
+            </div>
+            <div class="form-group">
+                <label for="item_name">Item Name:</label>
+                <input type="text" id="item_name" required>
+            </div>
+            <div class="form-group">
+                <label for="item_description">Item Description:</label>
+                <textarea id="item_description" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="item_weight">Weight per Item (kg):</label>
+                <input type="number" id="item_weight" min="0.01" step="0.01" required>
+            </div>
+            <button type="button" class="save-button">Save</button>
+        </form>
+    </main>
+</div>
+
+<footer>
+    <p>Developed by: Faiza Anjum Ritu</p>
+    <p>ID: 25203175 | Section: B</p>
+    <p>Department of CSE | IUBAT</p>
+</footer>
+</body>
+</html>

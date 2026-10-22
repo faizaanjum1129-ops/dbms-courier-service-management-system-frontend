@@ -1,0 +1,272 @@
+
+/* General page design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #ffcc00;
+    color: #d40511;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #d40511;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Main layout */
+.container {
+    display: flex;
+    min-height: 400px;
+}
+
+/* Left menu */
+.sidebar {
+    width: 220px;
+    background-color: #d40511;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #ffcc00;
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    background-color: white;
+    color: #d40511;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: #ffcc00;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 35px;
+    text-align: center;
+    background-color: white;
+}
+
+main h2 {
+    color: #d40511;
+    margin-top: 30px;
+}
+
+.welcome-box {
+    margin: 35px auto;
+    padding: 25px;
+    max-width: 550px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff9df;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 4px solid #ffcc00;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* For smaller screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+/* Customer Insert Form */
+.customer-form {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #fff9df;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid #ffcc00;
+    border-color: #d40511;
+}
+
+.save-button {
+    display: block;
+    width: 120px;
+    margin: 20px auto 0;
+    padding: 12px;
+    background-color: #d40511;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #a8000b;
+}
+/* Insert Options Layout */
+main .insert-options {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* Individual Cards */
+main .insert-options .insert-card {
+    display: block;
+    min-width: 0;
+    padding: 25px 15px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+main .insert-options .insert-card h3 {
+    color: #d40511;
+    margin: 0 0 10px;
+}
+
+main .insert-options .insert-card p {
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
+main .insert-options .insert-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffcc00;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    main .insert-options {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 450px) {
+    main .insert-options {
+        grid-template-columns: 1fr;
+    }
+}
+/* Home page delivery image */
+.home-image {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.home-image img {
+    width: 50%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+/* Home page background image */
+.home-hero {
+    min-height: 600px;
+    background-image: url("DHL Delivery at Sunrise.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    margin: -35px;
+    padding: 30px;
+}
+
+/* Center welcome text */
+.welcome-text {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 650px;
+}
+
+.welcome-text h2 {
+    color: #d40511;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.welcome-text p {
+    color: #222;
+    font-size: 17px;
+}

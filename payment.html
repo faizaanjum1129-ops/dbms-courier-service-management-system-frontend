@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Payment - DHL Courier Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>DHL Courier Service</h1>
+    <p>Courier Service Management System</p>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html">Home</a>
+        <a href="insert.html">Insert</a>
+        <a href="view.html">View</a>
+        <a href="search.html">Search</a>
+        <a href="payment-slip.html">Payment Slip</a>
+    </aside>
+
+    <main>
+        <h2>Insert Payment</h2>
+        <form class="customer-form">
+            <div class="form-group">
+                <label for="payment_id">Payment ID:</label>
+                <input type="text" id="payment_id" required>
+            </div>
+            <div class="form-group">
+                <label for="payment_shipment_id">Shipment ID:</label>
+                <input type="text" id="payment_shipment_id" required>
+            </div>
+            <div class="form-group">
+                <label for="payment_date">Payment Date:</label>
+                <input type="date" id="payment_date" required>
+            </div>
+            <div class="form-group">
+                <label for="payment_method">Payment Method:</label>
+                <select id="payment_method" required>
+                    <option value="">Select Method</option>
+                    <option>Cash</option>
+                    <option>Card</option>
+                    <option>Mobile Banking</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="payment_shipping_fee">Shipping Fee (Tk.):</label>
+                <input type="number" id="payment_shipping_fee" min="0" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="additional_charges">Additional Charges (Tk.):</label>
+                <input type="number" id="additional_charges" min="0" step="0.01" value="0" required>
+            </div>
+            <div class="form-group">
+                <label for="discount">Discount (Tk.):</label>
+                <input type="number" id="discount" min="0" step="0.01" value="0" required>
+            </div>
+            <div class="form-group">
+                <label for="total_amount">Total Amount (Tk.):</label>
+                <input type="number" id="total_amount" min="0" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="payment_status">Payment Status:</label>
+                <select id="payment_status" required>
+                    <option value="">Select Status</option>
+                    <option>Paid</option>
+                    <option>Pending</option>
+                    <option>Unpaid</option>
+                </select>
+            </div>
+            <button type="button" class="save-button">Save</button>
+        </form>
+    </main>
+</div>
+
+<footer>
+    <p>Developed by: Faiza Anjum Ritu</p>
+    <p>ID: 25203175 | Section: B</p>
+    <p>Department of CSE | IUBAT</p>
+</footer>
+</body>
+</html>
